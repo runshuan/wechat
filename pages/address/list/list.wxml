@@ -1,0 +1,16 @@
+<!-- 地址列表 -->
+<view class="listview">
+			<view class="receiver">
+				<view class="firstname">{{addtel.realname}}</view>
+				<view class="gender">{{addtel.gender == 1 ? '先生' : '女士'}}</view>
+				<view class="mobile">{{addtel.mobile}}</view>
+			</view>
+			<view class="detail">{{addtel.addres.name}}{{addtel.addres.desc}}{{addtel.detail}}</view>
+		<image class="ft" src="/image/edit.png" bindtap="edit" data-index="{{index}}" />
+</view>
+
+<!-- 添加按钮 -->
+<view class="add-address" bindtap="add">
+	<image src="/image/addto.png" class="icon" />
+	<view class="caption">新增地址</view>
+</view>
